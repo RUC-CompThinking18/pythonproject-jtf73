@@ -1,6 +1,6 @@
 import requests
 response = requests.get("https://api.iextrading.com/1.0.json")
-aresponse = requests.get() 
+aresponse = requests.get()
 def mfdoom(l):
     l = raw_input("What do you want to talk about?")
     #This takes the users input, mainly the name of coompany's and their stock
