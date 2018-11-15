@@ -1,34 +1,60 @@
-import requests
-url = ("https://api.iextrading.com/1.0/stock/aapl/chart.json")
-import json
+#import requests
+#url = ("https://api.iextrading.com/1.0/stock/aapl/chart.json")
+#import json
     #import simplejson as json
     #parsed_json = json.loads(json_string)
-r = requests.get("https://api.iextrading.com/1.0/stock/aapl/chart")
-print(r)
+#r = requests.get("https://api.iextrading.com/1.0/stock/aapl/chart")
+#print(r)
+
 a = {'prince':'princess'}
 b = {'king':50}
 c = {1:4}
+#Here are a set of dictionaries. There small for now can be messed with.
 print (a)
 print (b)
 print (c)
+#Printing here is more to see if it prints the right thing.
 for key, value in a.iteritems(): #for val in a:
     if value < 0:
         print ("Fail.")
 #            return val
-    else:
+    elif if value > 0:
         print("Check.")
+    elif value == 0:
+        print("Neutral.")
+    else:
+        pass
 for key, value in b.iteritems(): #for val in b:
     if value < 0:
         print ("Fail.")
 #            return val
-    else:
+    elif if value > 0:
         print("Check.")
+    elif value == 0:
+        print("Neutral.")
+    else:
+        pass
 for key, value in c.iteritems(): #for val in c:
     if value < 0:
         print ("Fail.")
 #            return val
-    else:
+    elif value > 0:
         print("Check.")
+    elif value == 0:
+        print("Neutral.")
+    else:
+        pass
+
+
+#Main idea. The code will try to check the dictionary and see if the values in
+#said dictionary are positive, negative, neutral, or if values are ints or not.
+#Main idea of idead of the code is to run with the api that tracks the stock of
+#certain companies, primarily Apple and the like, or book companies. Checking
+#their overall change and noting if it's positive or negative. Then saying
+#something witty.
+
+
+
 
 #aresponse = requests.get()
 #def mfdoom(l):
