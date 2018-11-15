@@ -5,6 +5,31 @@ import json
     #parsed_json = json.loads(json_string)
 r = requests.get("https://api.iextrading.com/1.0/stock/aapl/chart")
 print(r)
+a = {'prince':'princess'}
+b = {'king':50}
+c = {1:4}
+print (a)
+print (b)
+print (c)
+for key, value in a.iteritems(): #for val in a:
+    if value < 0:
+        print ("Fail.")
+#            return val
+    else:
+        print("Check.")
+for key, value in b.iteritems(): #for val in b:
+    if value < 0:
+        print ("Fail.")
+#            return val
+    else:
+        print("Check.")
+for key, value in c.iteritems(): #for val in c:
+    if value < 0:
+        print ("Fail.")
+#            return val
+    else:
+        print("Check.")
+
 #aresponse = requests.get()
 #def mfdoom(l):
 #    l = raw_input("What do you want to talk about?")
